@@ -1,0 +1,219 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  padding-bottom: 6rem; /* space for sticky footer */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoIcon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent-green-bg);
+  color: var(--accent-green);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleGroup h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.proBadge {
+  background-color: var(--accent-green-bg);
+  color: var(--accent-green);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 1px solid var(--accent-green);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.statusBadges {
+  display: flex;
+  gap: 1rem;
+}
+
+.badge {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.badge strong {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-green);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent-green);
+}
+
+.uploadArea {
+  background-color: var(--bg-card);
+  border: 1px dashed var(--border-color);
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.uploadArea:hover {
+  border-color: var(--accent-blue);
+  background-color: var(--bg-card-hover);
+}
+
+.cameraIcon {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.uploadTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.uploadSubtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.uploadButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.uploadButton:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.infoBox {
+  background-color: var(--accent-blue-bg);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.infoIcon {
+  color: var(--accent-blue);
+  flex-shrink: 0;
+}
+
+.infoContent h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.infoContent ul {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+
+.analyzeBtn {
+  background-color: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.analyzeBtn:hover:not(:disabled) {
+  background-color: var(--accent-green-hover);
+}
+
+.analyzeBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
